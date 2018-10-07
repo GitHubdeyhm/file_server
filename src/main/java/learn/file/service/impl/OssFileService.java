@@ -7,10 +7,11 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 
 /**
+ * 基于阿里云oss文件上传
  * 2018/9/24 0:08
  */
-@Service("localFileService")
-public class LocalFileService implements FileService {
+@Service
+public class OssFileService implements FileService {
 
     @Override
     public void saveUploadFile(MultipartFile file) {
